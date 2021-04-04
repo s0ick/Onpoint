@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'Gotham Pro Regular';
+  src: url('../fonts/GothamPro.eot');
+  src: url('../fonts/GothamPro.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/GothamPro.woff') format('woff'),
+       url('../fonts/GothamPro.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'Lato Semibold';
+  src: url('../fonts/Lato-SemiboldItalic.eot');
+  src: url('../fonts/Lato-SemiboldItalic.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Lato-SemiboldItalic.woff') format('woff'),
+       url('../fonts/Lato-SemiboldItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'Lato Regular';
+  src: url('../fonts/Lato-Regular.eot');
+  src: url('../fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Lato-Regular.woff') format('woff'),
+       url('../fonts/Lato-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+@mixin gotham {
+  font-family: 'Gotham Pro Regular', sans-serif;
+  font-weight: 400;
+}
+@mixin latoBold {
+  font-family: 'Lato Semibold', sans-serif;
+  font-weight: 700;
+}
+@mixin lato {
+  font-family: 'Lato Regular', sans-serif;
+  font-weight: 400;
+}

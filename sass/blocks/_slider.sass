@@ -1,0 +1,365 @@
+.slider
+  position: relative
+  height: 748px
+  overflow: hidden
+  &__title
+    position: absolute
+    top: 20px
+    left: 50px
+    color: #fff
+    font-size: 30px
+    +gotham
+  &__ellipse
+      width: 60px
+      height: 60px
+      border-radius: 50%
+      background-color: rgba(#434790, .5)
+      position: relative
+      display: flex
+      align-items: center
+      justify-content: center
+      z-index: 2
+      img
+        width: 70%
+  &-date
+    display: flex
+    justify-content: space-between
+    margin-top: 20px
+    color: #fff
+    span
+      font-size: 20px
+      +gotham     
+  &-range
+    position: absolute
+    bottom: 20px
+    left: 200px      
+  &__number
+    color: #fff
+    font-size: 27px
+    +latoBold
+  &__text
+    color: #fff
+    font-size: 18px
+    margin-left: 10px
+    +lato        
+  &-1
+    height: 100vh
+    position: relative
+    transform: translate(0, 0)
+    background-image: url('../img/slider/ice-bg-1.png')
+    background-position: 0% 100%
+    background-size: 75%
+    background-repeat: no-repeat
+    transition: .4s
+    &-block
+      width: 100%
+      height: 100%
+      background-image: url('../img/slider/slider-bg-arrows.png')
+      background-repeat: no-repeat
+      background-position: 57% 50%
+      background-size: 55%
+      display: flex
+      flex-direction: row
+      justify-content: space-around
+      padding-left: 120px
+      padding-right: 120px
+      padding-top: 100px
+    &__column
+      width: 60px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      position: relative
+      align-items: center
+      &:nth-child(1)
+        height: 330px
+        margin-top: 110px
+      &:nth-child(2)
+        height: 480px
+        margin-top: 50px  
+      &:nth-child(3)
+        margin-top: 110px
+        height: 415px
+    &__list
+      position: absolute
+      background: linear-gradient(#282d63,#0c143d, transparent , transparent)
+      height: 400px
+      width: 230px
+      border-radius: 37px
+      bottom: -90px
+      left: -20px
+      span
+        color: #fff
+        display: block
+        margin: auto
+        margin-top: 20px
+        font-size: 16px
+        text-align: center
+        +lato      
+    &__subtitle
+      position: absolute
+      display: flex
+      top: 0
+      color: #fff
+      &:nth-child(1)
+        flex-direction: row
+        align-items: center
+        top: 15%
+        left: 43%
+      &:nth-child(2)
+        flex-direction: column
+        align-items: flex-end
+        text-align: end
+        top: 44%
+        left: 32%
+      &:nth-child(3)
+        flex-direction: column
+        align-items: flex-start
+        text-align: start
+        top: 44%
+        left: 52%
+        div
+          margin: 0
+      &:nth-child(4)
+        flex-direction: column
+        align-items: flex-start
+        text-align: start
+        top: 75%
+        left: 79%
+        div
+          margin: 0     
+      &:nth-child(5)
+        flex-direction: column
+        align-items: flex-start
+        text-align: start
+        top: 63%
+        left: 79%
+        div
+          margin: 0        
+      &:nth-child(6)
+        flex-direction: column
+        align-items: flex-start
+        text-align: start
+        top: 51%
+        left: 79%
+        div
+          margin: 0    
+      &:nth-child(7)
+        flex-direction: column
+        align-items: flex-start
+        text-align: start
+        top: 29%
+        left: 80%
+        div
+          margin: 0
+      &:nth-child(8)
+        flex-direction: column
+        align-items: flex-end
+        text-align: end
+        top: 26%
+        left: 7.5%
+      &:nth-child(9)
+        flex-direction: column
+        align-items: flex-end
+        text-align: end
+        top: 40%
+        left: -1%
+      &:nth-child(10)
+        flex-direction: column
+        align-items: flex-end
+        text-align: end
+        top: 65%
+        left: 10.5%
+      &:nth-child(11)
+        flex-direction: column
+        align-items: flex-end
+        text-align: end
+        top: 77%
+        left: 38%
+      &:nth-child(12)
+        top: 54%
+        left: 20%
+      &:nth-child(13)
+        top: 56%
+        left: 50.7% 
+      &:nth-child(14)
+        top: 64.5%
+        left: 40%
+        div
+          font-size: 24px                                
+  &-2
+    height: 100vh
+    position: relative
+    transform: translate(-150%, -100%)
+    background-image: url('../img/slider/ice-bg-2.png')
+    background-position: 100% 100%
+    background-size: 75%
+    background-repeat: no-repeat
+    transition: .4s
+    &-block
+      width: 100%
+      height: 100%
+      background-image: url('../img/slider/slider-2-arrows.png')
+      background-repeat: no-repeat
+      background-position: center
+      background-size: 55%
+      display: flex
+      flex-direction: row
+      justify-content: space-around
+      padding-left: 125px
+      padding-right: 125px
+      padding-top: 100px
+    &__column
+      width: 60px
+      height: 360px
+      margin-top: 94px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      position: relative
+      align-items: center
+      &:nth-child(1)
+        justify-content: center
+      &:nth-child(2)
+        margin-right: 60px
+      &:nth-child(4)
+        margin-left: 53px
+      &:nth-child(5)
+        justify-content: center
+    &__subtitle
+      position: absolute
+      display: flex
+      align-items: center
+      justify-content: center
+      top: 0
+      color: #fff
+      &:nth-child(1)
+        flex-direction: column
+        align-items: center
+        top: 18%
+        left: 45%
+      &:nth-child(2)
+        flex-direction: column
+        align-items: flex-end
+        text-align: end
+        top: 28%
+        left: 12.5%
+      &:nth-child(3)
+        flex-direction: column
+        align-items: flex-start
+        text-align: start
+        top: 28%
+        left: 73%
+        div
+          margin: 0
+      &:nth-child(4)
+        flex-direction: column
+        align-items: flex-start
+        text-align: start
+        top: 46%
+        left: 85%
+        div
+          margin: 0     
+      &:nth-child(5)
+        flex-direction: column
+        align-items: center
+        text-align: center
+        top: 75%
+        left: 64.5%
+        div
+          margin: 0        
+      &:nth-child(6)
+        flex-direction: column
+        align-items: center
+        text-align: center
+        top: 75%
+        left: 47%
+        div
+          margin: 0    
+      &:nth-child(7)
+        flex-direction: column
+        align-items: center
+        text-align: center
+        top: 75%
+        left: 25.5%
+        div
+          margin: 0
+      &:nth-child(8)
+        flex-direction: column
+        align-items: flex-end
+        text-align: end
+        top: 47%
+        left: 8%
+      &:nth-child(9)
+        top: 39%
+        left: 27%
+        border: 1px solid #fff
+        width: 440px
+        height: 165px
+  &-3
+    height: 100vh
+    position: relative
+    transform: translate(-100%, -200%)
+    background-image: url('../img/slider/ice-bg-3.png')
+    background-position: 10% 90%
+    background-size: 75%
+    background-repeat: no-repeat
+    transition: .4s
+    &-block
+      width: 100%
+      height: 100%
+      background-image: url('../img/slider/slider-3-arrows.png')
+      background-repeat: no-repeat
+      background-position: center
+      background-size: 55%
+      display: flex
+      flex-direction: row
+      justify-content: space-around
+      padding-left: 30px
+      padding-right: 30px
+      padding-top: 100px
+    &__column
+      width: 70px
+      height: 270px
+      margin-top: 130px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      position: relative
+      align-items: center
+      &:nth-child(1)
+        justify-content: flex-end
+      &:nth-child(2)
+        justify-content: flex-start
+      &:nth-child(3)
+        justify-content: flex-end
+    &__subtitle
+      position: absolute
+      display: flex
+      align-items: center
+      justify-content: center
+      top: 0
+      color: #fff
+      &:nth-child(1)
+        top: 54%
+        left: 32%
+        border: 1px solid #fff
+        width: 335px
+        height: 130px
+        div
+          margin: 0
+      &:nth-child(2)
+        top: 22%
+        left: 45%
+        flex-direction: column
+        justify-content: center
+      &:nth-child(3)
+        top: 49%
+        left: 14.5%
+        flex-direction: column
+        justify-content: center 
+      &:nth-child(4)
+        top: 49%
+        left: 77.5%
+        flex-direction: column
+        justify-content: center        
